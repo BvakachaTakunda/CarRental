@@ -31,12 +31,12 @@
   return (
     <div className="van-options">
       <h1>Explore our van options</h1>
-      {/* <div className="filters">
+       <div className="filters">
         <button onClick={() => handleFilterChange("Simple")} className={filter === "Simple" ? "active" : ""}>Simple</button>
         <button onClick={() => handleFilterChange("Luxury")} className={filter === "Luxury" ? "active" : ""}>Luxury</button>
         <button onClick={() => handleFilterChange("Rugged")} className={filter === "Rugged" ? "active" : ""}>Rugged</button>
         <button onClick={clearFilters}>Clear filters</button>
-      </div> */}
+      </div> 
       <div className="van-list">
         {filteredVans.map(van => (
           <div className="van-card" key={van.name}>
