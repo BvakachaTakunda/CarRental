@@ -1,0 +1,54 @@
+.image-back{
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url('../components/images/image-533.png'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This makes the background image fixed */
+  min-height: 100vh; /* Ensure it covers the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.van-text {
+  background-color: rgba(253, 244, 238, 0.8); /* Slightly transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.van-text h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.van-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background-color: #ffc66e;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.cta h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.cta button:hover {
+  background-color: #333;
+}

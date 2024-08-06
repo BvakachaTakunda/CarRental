@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    color: black;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+  }
+  
