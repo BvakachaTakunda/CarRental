@@ -58,20 +58,21 @@ const { name } = useParams(); // Retrieve the name parameter from the URL
 const van = vanData.find((van) => van.name === name); // Find the van that matches the name parameter
 
 if (!van) {
-    return <div>Van not found</div>; // Handle case where van is not found
+    return <div>Van not found</div>; 
   }
 
   return (
     <div className="container">
-      <a href="/vans" className="back-link">← Back to all vans</a>
+      <a href="/vans" className="back-link" style={{margin:"40px", fontSize:"20px", color:"black"}}>← Back to all vans</a>
       <div className="rent-info">
-        <img src={van.image} alt={van.name} className="van-image" />
-        <div className="content">
+        {/* <img src={van.image} alt={van.name} style={{width:"100%", height:"10%", marginTop:"35px"}}/> */}
+        <div className="hero-section" style={{ backgroundImage: `url(${van.image})`, width:"100%", height:"70vh", marginTop:"35px",backgroundAttachment:"fixed" }}></div>
+        <div className="content" >
           <div className="tag">{van.type}</div>
           <h1 className="title">{van.name}</h1>
           <p className="price">${van.price}/day</p>
           <p className="description">{van.description}</p>
-          <Link to='/Sign'><span className={`tag ${van.type.toLowerCase()}`}>Rent this van</span></Link>
+          <Link to={`/Rent/${van.name}`}><span className={`tag ${van.type.toLowerCase()}`}>Rent this van</span></Link>
         </div>
       </div>
     </div>

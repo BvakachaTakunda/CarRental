@@ -18,10 +18,11 @@ body {
     font-size: 100px;
 }
 
-.van-image {
-    width: 70%;
+.van.name-class img {
+    margin-top: 20px;
+    width: 30%;
     height: 20%;
-    border-radius: 8px;
+    border-radius: 200px;
     margin-bottom: 20px;
 }
 .content {
