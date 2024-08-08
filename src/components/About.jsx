@@ -1,6 +1,7 @@
 
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 function About() {
 return  (
@@ -16,7 +17,7 @@ return  (
     </p>
     <div className="cta">
       <h2>Your destination is waiting. Your van is ready.</h2>
-      <button>Explore our vans</button>
+     <Link to="/Vans"><button>Explore our vans</button></Link>
     </div>
   </div>
 </div>

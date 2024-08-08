@@ -1,0 +1,78 @@
+body {
+    background-color: #FFF5ED;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF5ED;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+
+.van-image {
+    width: 70%;
+    height: 20%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.content {
+    text-align: left;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #F2A365;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+.price {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.rent-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff1500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.rent-button:hover {
+    background-color: #E55B50;
+}
+
+
+
+
+
+

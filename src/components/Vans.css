@@ -13,12 +13,20 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #d4af37;
+  cursor: pointer;
+}
+.Clear-filters {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
   cursor: pointer;
 }
 
 .filters .active {
-  background-color: #d4af37; /* Gold color for active filter */
+  background-color: #d44e37; /* Gold color for active filter */
   color: white;
 }
 
