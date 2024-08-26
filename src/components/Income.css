@@ -1,0 +1,98 @@
+/* IncomeDashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF4D6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #FFE8C2;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .navbar a {
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  
+  .income-summary {
+    background-color: #FFE8C2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .income-summary h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .income-summary p {
+    margin: 10px 0;
+  }
+  
+  .income-amount {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .chart {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bar-container {
+    text-align: center;
+  }
+  
+  .bar {
+    width: 30px;
+    background-color: #FEC98F;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 5px;
+  }
+  
+  .transactions {
+    margin-top: 20px;
+  }
+  
+  .transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .transaction-item {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-amount {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .transaction-date {
+    color: #777;
+  }

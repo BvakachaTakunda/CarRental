@@ -43,7 +43,8 @@ const Vans = () => {
         <button onClick={() => handleFilterChange("Rugged")} className={filter === "Rugged" ? "active" : ""}>
           Rugged
         </button>
-        <button onClick={clearFilters}>Clear filters</button>
+        <button className="allvans" style={{backgroundColor:"white", width:"120px", margin:"0px"}} onClick={clearFilters}><a href="/vans" className="back-link" style={{fontSize:"12px", color:"black"}}>← Clear filters</a></button>
+        
       </div>
       <div className="van-list">
         {filteredVans.map((van) => (

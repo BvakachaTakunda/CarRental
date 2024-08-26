@@ -1,0 +1,91 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #fdf2e8;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 0;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .rating-section {
+    margin-bottom: 20px;
+  }
+  
+  .rating {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    color: #f15b31;
+    margin-left: 5px;
+  }
+  
+  .progress-bar-container {
+    margin-top: 10px;
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .bar {
+    background-color: #f15b31;
+    height: 5px;
+    width: 0%;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .bar.full {
+    width: 100%;
+  }
+  
+  .reviews {
+    margin-top: 20px;
+  }
+  
+  .review {
+    margin-bottom: 20px;
+  }
+  
+  .reviewer {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }

@@ -1,0 +1,100 @@
+/* Dashboard.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF4D6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #FFE8C2;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .navbar a {
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+  }
+  
+  .income-card, .review-card {
+    background-color: #FFE8C2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .income-details, .review-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .income-amount {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .review-score {
+    font-size: 24px;
+    color: #FF8C00;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .details-link, .viewall-link, .edit-link {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #444;
+  }
+  
+  .vans-list {
+    margin-top: 20px;
+  }
+  
+  .vans-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .van-item {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .van-image {
+    border-radius: 4px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .van-item h3 {
+    margin: 0;
+  }
+  
+  .van-item p {
+    margin: 5px 0 0;
+    color: #777;
+  }
