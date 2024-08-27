@@ -11,14 +11,6 @@ body {
     padding: 20px;
   }
   
-  .navbar {
-    background-color: #FFE8C2;
-    padding: 10px;
-    display: flex;
-    gap: 20px;
-    font-size: 14px;
-  }
-  
   .navbar a {
     color: #444;
     text-decoration: none;
