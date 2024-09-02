@@ -74,7 +74,7 @@ const SignIn = () => {
           borderRadius: '4px',
           cursor: 'pointer',
           marginTop: '1rem',
-          minWidth: '350px',
+           width: '100%'
         }}>Sign In</button>
       </form>
       <p style={{
