@@ -1,101 +1,3 @@
-
-// import React, { useState } from 'react';
-// import { signInWithEmailAndPassword } from "firebase/auth";
-// import { auth } from './Firebase';
-// import { Link } from 'react-router-dom'; // Import Link for navigation
-
-// const SignIn = () => {
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
-
-//   const handleSignIn = async (e) => {
-//     e.preventDefault();
-//     try {
-//       await signInWithEmailAndPassword(auth, email, password);
-//       alert('User signed in successfully!');
-//     } catch (error) {
-//       console.error(error.message);
-//     }
-//   };
-
-//   return (
-//     <div style={styles.container}>
-//       <h1 style={styles.header}>Sign in to your account</h1>
-//       <form onSubmit={handleSignIn} style={styles.form}>
-//         <input
-//           type="email"
-//           value={email}
-//           onChange={(e) => setEmail(e.target.value)}
-//           placeholder="Email address"
-//           style={styles.input}
-//           required
-//         />
-//         <input
-//           type="password"
-//           value={password}
-//           onChange={(e) => setPassword(e.target.value)}
-//           placeholder="Password"
-//           style={styles.input}
-//           required
-//         />
-//         <Link to='/Host'><button type="submit" style={styles.button}>Sign In</button></Link>
-//       </form>
-//       <p style={styles.text}>
-//         Don’t have an account?{'/ '}
-//         <Link to="/Signup" style={styles.link}>Create one now</Link>
-//       </p>
-//     </div>
-//   );
-// };
-
-// const styles = {
-//   container: {
-//     maxWidth: '400px',
-//     margin: '0 auto',
-//     textAlign: 'center',
-//     padding: '2rem',
-//     backgroundColor: '#fffbf8',
-//     borderRadius: '8px',
-//   },
-//   header: {
-//     fontSize: '1.5rem',
-//     fontWeight: 'bold',
-//     marginBottom: '2rem',
-//   },
-//   form: {
-//     display: 'flex',
-//     flexDirection: 'column',
-//     gap: '1rem',
-//   },
-//   input: {
-//     padding: '0.75rem',
-//     fontSize: '1rem',
-//     border: '1px solid #ccc',
-//     borderRadius: '4px',
-//   },
-//   button: {
-//     padding: '0.75rem',
-//     fontSize: '1rem',
-//     backgroundColor: '#f77f31',
-//     color: '#fff',
-//     border: 'none',
-//     borderRadius: '4px',
-//     cursor: 'pointer',
-//     marginTop: '1rem',
-//     minWidth: '400px',
-//   },
-//   text: {
-//     marginTop: '1rem',
-//     fontSize: '1rem',
-//   },
-//   link: {
-//     color: '#f77f31',
-//     textDecoration: 'none',
-//   },
-// };
-
-// export default SignIn;
-
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from './Firebase';
@@ -172,14 +74,14 @@ const SignIn = () => {
           borderRadius: '4px',
           cursor: 'pointer',
           marginTop: '1rem',
-          minWidth: '400px',
+          minWidth: '350px',
         }}>Sign In</button>
       </form>
       <p style={{
         marginTop: '1rem',
         fontSize: '1rem',
       }}>
-        Don’t have an account?{' '}
+        Don’t have an account?{'./Signup'}
         <Link to="/Signup" style={{
           color: '#f77f31',
           textDecoration: 'none',
