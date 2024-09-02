@@ -9,9 +9,9 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-links" style={{display:"flex", margin:"0px"}}>
         <Link to="/Host" className="active">Dashboard</Link>
-        <Link to="/Income"><h4 style={{ margin:"2px"}}>Income</h4></Link>
-        <Link to="/Vansdash"><h4 style={{ margin:"2px"}}>Vans</h4></Link>
-        <Link to="/Reviews"><h4 style={{ margin:"2px"}}>Reviews</h4></Link>
+        <Link to="/Income"><h6 style={{ margin:"1px"}}>Income</h6></Link>
+        <Link to="/Vansdash"><h6 style={{ margin:"1px"}}>Vans</h6></Link>
+        <Link to="/Reviews"><h6 style={{ margin:"1px"}}>Reviews</h6></Link>
       </div>
     </nav>
   );
