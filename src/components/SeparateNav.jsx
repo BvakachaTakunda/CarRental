@@ -5,7 +5,7 @@ function Navbar({ showHost }) {
     <nav style={styles.navbar}>
       <div style={styles.logo}>#CarRental</div>
       <ul style={styles.navLinks}>
-        {showHost && <li>Host</li>} {/* Conditionally render Host link */}
+        {showHost && <li>Host</li>} {}
         <li>About</li>
         <li>Vans</li>
       </ul>

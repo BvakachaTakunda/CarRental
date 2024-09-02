@@ -1,146 +1,132 @@
-/* .vans-dashboard-container {
-  background-color: #fdf4e6;
-  min-height: 100vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
 }
 
-.vans-sub-nav {
-  width: 100%;
-  max-width: 800px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sub-nav-link {
-  font-size: 16px;
-  text-decoration: none;
-  color: inherit;
-  padding-bottom: 5px;
-}
-
-.sub-nav-link.active {
-  border-bottom: 2px solid black;
-}
-
-.vans-dashboard-main {
-  width: 100%;
-  max-width: 800px;
-}
-
-.vans-dashboard-main h2 {
+h2 {
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.filters {
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
 }
 
-.filters button {
-  margin: 5px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #d4af37;
-  cursor: pointer;
-}
-
-.filters button.active {
-  background-color: #d44e37; /* Gold color for active filter */
- /* color: white;
-}
-
-.allvans {
-  background-color: white;
-  width: 120px;
-  margin: 0px;
-}
-
-.allvans .back-link {
-  font-size: 12px;
-  color: black;
-}
 
 .van-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template: row;
+
+  
+  @media (min-width: 895px) and (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 595px) and (max-width: 873px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 200px) and (max-width: 594px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+.van-item {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
 }
 
-.van-card {
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: left;
+.van-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.van-card img {
-  max-width: 100%;
+.van-item img {
+  width: 100px;
   height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+
+  @media (max-width: 768px) {
+    .van-item img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .van-item img {
+      width: 60%;
+      height: auto;
+    }
+  }
 }
 
 .van-info {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .van-info h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.2em;
+  margin: 0;
+  font-size: 20px;
+  color: #333;
 }
 
 .van-info p {
-  margin: 0;
-  font-weight: bold;
+  margin: 5px 0;
+  color: #666;
 }
 
-.tag {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9em;
-  color: white;
+.van-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #fff;
 }
 
-.tag.simple {*/
- /* background-color: #ffa07a; /* Light salmon for Simple */
-/*}
-
-.tag.luxury {
-  background-color: #d4af37; /* Gold for Luxury */
-/*}
-
-.tag.rugged {
-  background-color: #228b22; /* Forest green for Rugged */
-/*}*/ 
-
-/*.selected-van-info {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.selected-van-info img {
-  width: 300px;
+.van-details img {
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-.van-card {
-  cursor: pointer;
-  transition: transform 0.2s ease;
+.van-nav {
+  margin-top: 20px;
 }
 
-.van-card:hover {
-  transform: scale(1.05);
+.van-nav-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.van-nav-link:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }

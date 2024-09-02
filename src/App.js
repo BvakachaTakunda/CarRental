@@ -6,6 +6,7 @@ import About from './components/About';
 import Vans from './components/Vans';
 import Rent from './components/Rent';
 import Sign from './components/Sign';
+import  Signup from './components/Signup';
 import Host from './components/Host';
 import Income from './components/Income';
 import Reviews from './components/Reviews';
@@ -25,6 +26,7 @@ function App() {
           <Route path='/Vans' element={<Vans />} />
           <Route path='/Vans/:name' element={<Rent />} />
           <Route path='/Rent/:name' element={<Sign />} />
+          <Route path='/Rent/:name' element={<Signup />} />
           <Route path='/Host' element={<Host />} />
           <Route path='/income' element={<Income />} />
           <Route path='/Reviews' element={<Reviews />} />

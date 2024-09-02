@@ -26,16 +26,30 @@
 }
 
 .filters .active {
-  background-color: #d44e37; /* Gold color for active filter */
+  background-color: #d44e37; 
   color: white;
 }
 
-.van-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.van-list{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
+  justify-content: center;
+ 
+  @media (min-width: 895px) and (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 595px) and (max-width: 873px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 200px) and (max-width: 594px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+
 .van-card {
   width: 200px;
   border: 1px solid #ccc;
@@ -48,8 +62,21 @@
 .van-card img {
   width: 100%;
   height: auto;
+
+@media (max-width: 768px) {
+  .van-card img {
+    width: 80%;
+    height: auto;
+  }
 }
 
+@media (max-width: 480px) {
+  .van-card img {
+    width: 60%;
+    height: auto;
+  }
+}
+}
 .van-card h2 {
   margin: 10px;
   font-size: 1.2em;
@@ -70,13 +97,13 @@
 }
 
 .tag.simple {
-  background-color: #ffa07a; /* Light salmon for Simple */
+  background-color: #ffa07a; 
 }
 
 .tag.luxury {
-  background-color: #d4af37; /* Gold for Luxury */
+  background-color: #d4af37; 
 }
 
 .tag.rugged {
-  background-color: #228b22; /* Forest green for Rugged */
+  background-color: #228b22; 
 }
