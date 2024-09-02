@@ -11,7 +11,7 @@ function Navbar() {
       <div className="nav-links" style={{display:"flex", margin:"0px"}}>
         <Link to="/Host"><h4 style={{ margin:"2px"}}>Host</h4></Link>
         <Link to="/About"><h4 style={{ margin:"2px"}}>About</h4></Link>
-        <Link to="/Vans"><h4 style={{ margin:"2px",marginRight:"5px"}}>Vans</h4></Link>
+        <Link to="/Vans"><h4 style={{ margin:"2px"}}>Vans</h4></Link>
       </div>
     </nav>
   );
