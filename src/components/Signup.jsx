@@ -3,6 +3,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from './Firebase';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -13,15 +15,17 @@ const SignUp = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      alert('Passwords do not match!');
+      toast.error('Passwords do not match!');
       return;
     }
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate('/Signin');
+      toast.success('Account created successfully!', {
+        onClose: () => navigate('/Rent/:name'),
+      });
     } catch (error) {
       console.error(error.message);
-      alert('Error creating account');
+      toast.error('Error creating account');
     }
   };
 
@@ -105,11 +109,12 @@ const SignUp = () => {
         color: '#666',
       }}>
         Already have an account?{' '}
-        <Link to="/Signin" style={{
+        <Link to={`/Rent/:name`} style={{
           color: '#f77f31',
           textDecoration: 'none',
         }}>Sign in now</Link>
       </p>
+      <ToastContainer />
     </div>
   );
 };
