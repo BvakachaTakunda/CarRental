@@ -65,8 +65,7 @@ if (!van) {
     <div className="container">
       <a href="/vans" className="back-link" style={{margin:"40px", fontSize:"20px", color:"black"}}>← Back to all vans</a>
       <div className="rent-info">
-        {/* <img src={van.image} alt={van.name} style={{width:"100%", height:"10%", marginTop:"35px"}}/> */}
-        <div className="hero-section" style={{ backgroundImage: `url(${van.image})`, width:"100%", height:"70vh", marginTop:"35px",backgroundAttachment:"fixed" }}></div>
+         <img src={van.image} alt={van.name} style={{width:"100%", marginTop:"35px" , borderRadius:'100px'}}/> 
         <div className="content" >
           <div className="tag">{van.type}</div>
           <h1 className="title">{van.name}</h1>

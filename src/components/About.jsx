@@ -1,12 +1,13 @@
 
 import React from 'react';
 import './About.css';
+import image from './images/image-54.png'
 import { Link } from 'react-router-dom';
 
 function About() {
 return  (
   <div className="van-rental-container">
-    <div className='image-back'></div>
+    <img src={image} alt="" style={{width:"100%", marginTop:"35px" , borderRadius:'100px'}}/> 
   <div className="van-text">
     <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
     <p>
