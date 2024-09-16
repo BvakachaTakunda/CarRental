@@ -60,7 +60,7 @@ const SignUp = () => {
             fontSize: '16px',
             border: '1px solid #ccc',
             borderRadius: '5px',
-            width: '100%',
+            width: '95%',
           }}
           required
         />
@@ -74,7 +74,7 @@ const SignUp = () => {
             fontSize: '16px',
             border: '1px solid #ccc',
             borderRadius: '5px',
-            width: '100%',
+            width: '95%',
           }}
           required
         />
@@ -88,7 +88,7 @@ const SignUp = () => {
             fontSize: '16px',
             border: '1px solid #ccc',
             borderRadius: '5px',
-            width: '100%',
+            width: '95%',
           }}
           required
         />

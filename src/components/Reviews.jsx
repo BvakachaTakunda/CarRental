@@ -24,7 +24,7 @@ function App() {
             <div className="rating-bar">
               <span>5 stars</span>
               <div className="bar">
-                <div className="fill" style={{ width: '100%' }}></div>
+                <div className="fill" style={{ width: '100%', }}></div>
               </div>
               <span>100%</span>
             </div>

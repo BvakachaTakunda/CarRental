@@ -1,10 +1,13 @@
 .navbar {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #ffffff;
+    background-color: #fffbf2;
+    height: 70px;
     color: black;
     position: sticky;
+    width: 100%;
     top: 0;
   }
   

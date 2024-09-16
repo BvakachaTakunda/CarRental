@@ -54,8 +54,8 @@ const vanData = [
 ];
 
 const Rent = () => {
-const { name } = useParams(); // Retrieve the name parameter from the URL
-const van = vanData.find((van) => van.name === name); // Find the van that matches the name parameter
+const { name } = useParams(); 
+const van = vanData.find((van) => van.name === name); 
 
 if (!van) {
     return <div>Van not found</div>; 
@@ -80,3 +80,6 @@ if (!van) {
 };
 
 export default Rent;
+
+
+
